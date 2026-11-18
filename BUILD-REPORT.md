@@ -65,6 +65,13 @@ The dev window FALLS −2.80% (range 3.25%): sharp opening drop, slow grind back
 - **Dev rank does not decide prizes** — only the unseen 24 h live window does. A DP-schedule bot's live behaviour is its hardcoded dev bar indices, which mean nothing on unseen data; its live PnL is essentially luck. This bot is a genuine strategy (2-for-2 winning dip trades on dev, plateau parameters), so its live prospects rest on the live window offering at least one ≥2% capitulation dip (the fallback guarantees ≥1 trade even if it doesn't).
 - **Verdict: LAYAK SUBMIT per the task's stated bar (≥ +$11.77).** It is NOT top-1 class in dev (+$92.30 is a DP-fitted artifact, not a beatable strategy bar), so a top-10 live finish is a maybe, not an expectation. Do not present it to syarif as a likely winner.
 
+## Kit check + submit status (2026-11-18 ~23:35 WIB)
+
+- Repo: https://github.com/SARIP-afk/btc-race-24h-20261118-1444-entry, HEAD `054e5a2` (2 commits: bot + SPDX/revision fix), pushed, public, About set (description + homepage + topics makefun,ai-agents,bounties,trading).
+- Bundle: `btc-race-24h-20261118-1444-entry-transcripts.tar.gz` (205.570 byte, sha256 `738f33d6b933f64abf2bfc4d1c42cd60ce4cad0065f7220275c3a02dc12caff8`).
+- Kit check: **13 pass, 1 fail — hanya `thinking_priced` (0 usage rows)**. `license_osi` + `thinking_revised` sudah diperbaiki builder di commit `054e5a2` (SPDX line + revisi main.ts, re-grade byte-identik +$26.149890). Usage rows baru ditulis setelah run builder selesai → **parent yang lampirkan usage + re-bundle + submit** (agent builder `b8a252eb-d81f-4764-a081-9046b6675ea5`, file usage `~/workspace/makefun/btc-race-24h-20261118-1444-muse-usage.jsonl`).
+- **BELUM SUBMIT** — menunggu parent. Deadline entri 19 Nov 03:44 WIB.
+
 ## Files
 
 - `main.ts` — the bot (Node 22, pure SDK, no dependencies).
