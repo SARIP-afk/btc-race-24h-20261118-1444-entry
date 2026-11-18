@@ -68,7 +68,11 @@ const TRAIL_BPS = 25n;
 const SL_BPS = 100n;
 /** Time-stop: sell after this many bars held. */
 const MAX_HOLD = 480;
-/** Fallback exit: arm / trail / hold for the single fallback trade. */
+/** Fallback exit: arm / trail / hold for the single fallback trade.
+ *  Capped at ONE fallback trade: a re-arming fallback was tested and
+ *  REJECTED — on the dev window's second half its second trade buys the
+ *  final slide (bar 1197 -> 1431) and loses -$13.23, turning a +$2.01
+ *  fallback into -$11.23. One fallback trade only. */
 const FB_ARM_BPS = 60n;
 const FB_TRAIL_BPS = 30n;
 const FB_MAX_HOLD = 240;
